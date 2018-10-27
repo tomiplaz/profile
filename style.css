@@ -23,10 +23,21 @@ body {
 }
 
 .container--first__item--first img {
-    width: 50%;
+    width: 40%;
     height: auto;
-    margin-bottom: 5%;
     border-radius: 50%;
+}
+
+.container--first__item--first__description {
+    text-align: center;
+}
+
+.container--first__item--first__description__name {
+    margin: 0;
+}
+
+.container--first__item--first__description__profession {
+    margin: 0;
 }
 
 .container--first__item--first__profiles {
