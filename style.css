@@ -9,20 +9,20 @@ body {
     align-items: center;
 }
 
-.container--first .container--first__item {
+.container--first__item {
     width: 100%;
     height: 45vh;
 }
 
-.container--first .container--first__item--first {
+.container--first__item--first {
     background-color: red;
 }
 
-.container--first .container--first__item--second {
+.container--first__item--second {
     background-color: blue;
 }
 
-.container--second .container--second__item {
+.container--second__item {
     width: 100%;
     text-align: center;
     background-color: gray;
@@ -33,7 +33,7 @@ body {
         flex-direction: row;
     }
 
-    .container--first .container--first__item {
+    .container--first__item {
         width: 50%;
         height: 90vh;
     }
