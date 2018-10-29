@@ -1,13 +1,27 @@
 :root {
-    --green: #33ff66;
-    --black: #000000;
-    font-size: calc(16px + (28 - 16) * ((100vw - 600px) / (1600 - 600)));
+    --green: #82d433;
+    --black: #232729;
+    font-size: calc(14px + (24 - 14) * ((100vw - 580px) / (1600 - 580)));
     color: var(--green);
     background-color: var(--black);
+    font-family: Courier;
 }
 
 body {
     margin: 0;
+}
+
+.fa.fa-angle-right {
+    font-weight: bold;
+}
+
+a {
+    color: var(--green);
+    cursor: pointer;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 .container {
@@ -19,7 +33,7 @@ body {
 
 .container--first__item {
     width: 100%;
-    height: 48vh;
+    height: 50vh;
 }
 
 .container--first__item--first {
@@ -37,7 +51,6 @@ body {
 
 .container--first__item--first__description {
     text-align: center;
-    margin-bottom: 1%;
 }
 
 .container--first__item--first__description__name {
@@ -81,8 +94,20 @@ body {
 .container--first__item--second {
     display: flex;
     flex-flow: column;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
+    text-align: center;
+}
+
+.container--first__item--second h2 {
+    text-align: center;
+    margin-top: initial;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container--first__item--second p {
+    margin: 1% 5%;
 }
 
 .container--second__item {
@@ -90,13 +115,33 @@ body {
     text-align: center;
 }
 
-@media only screen and (orientation: landscape) and (min-width: 600px) {
+@media only screen and (orientation: landscape) {
     .container--first {
         flex-direction: row;
     }
 
     .container--first__item {
         width: 50%;
-        height: 96vh;
+        height: 100vh;
+    }
+
+    .container--second {
+        width: 60%;
+        margin: 0 auto;
     }
 }
+
+@media only screen and (orientation: portrait) and (min-width: 500px) {
+    .container {
+        width: 75%;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (orientation: portrait) and (min-width: 900px) {
+    .container {
+        width: 60%;
+        margin: 0 auto;
+    }
+}
+
