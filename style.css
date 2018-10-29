@@ -31,6 +31,10 @@ a:hover {
     align-items: center;
 }
 
+.container--first {
+    width: 100%;
+}
+
 .container--first__item {
     width: 100%;
     height: 50vh;
@@ -115,6 +119,24 @@ a:hover {
     text-align: center;
 }
 
+.container--second__item--work-experience__item,
+.container--second__item--pet-projects__item {
+    margin-bottom: 5%;
+}
+
+.container--second__item--work-experience__item__company,
+.container--second__item--work-experience__item__role,
+.container--second__item--work-experience__item__duration,
+.container--second__item--pet-projects__item__name {
+    margin: 0;
+}
+
+.container--second__item--work-experience__item p,
+.container--second__item--pet-projects__item p {
+    width: 80%;
+    margin: 0 auto;
+}
+
 @media only screen and (orientation: landscape) {
     .container--first {
         flex-direction: row;
@@ -126,7 +148,7 @@ a:hover {
     }
 
     .container--second {
-        width: 60%;
+        width: 75%;
         margin: 0 auto;
     }
 }
