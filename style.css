@@ -64,8 +64,10 @@ body {
     font-size: 1.8rem;
     padding: 5px;
     text-align: center;
-    border-radius: 50%;
-    box-shadow: 2px 2px 2px 2px var(--green);
+}
+
+.container--first__item--first__profiles a:hover {
+    box-shadow: 0 0.2em 0 0 var(--green);
 }
 
 .container--first__item--first__profiles a:hover,
