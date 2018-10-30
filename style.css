@@ -12,6 +12,25 @@ body {
     margin: 0;
 }
 
+#indicator {
+    font-size: 2em;
+    position: fixed;
+    left: 50%;
+    text-align: center;
+    width: 10%;
+    margin-left: -5%;
+    transition-property: bottom;
+    transition-duration: 0.3s;
+}
+
+#indicator.show {
+    bottom: 0;
+}
+
+#indicator.hide {
+    bottom: -10vh;
+}
+
 h2:not(.container--first__item--basic__description__profession) {
     display: table;
     box-shadow: var(--box-shadow-common);

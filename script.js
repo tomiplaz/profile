@@ -1,6 +1,20 @@
-(function() {
-    'use strict';
 
+'use strict';
+
+// indicator
+(function() {
+    const indicatorElem = document.getElementById('indicator');
+    const topElem = document.getElementsByClassName('container--first').item(0);
+
+    window.addEventListener('scroll', () => {
+        const topElemRect = topElem.getBoundingClientRect();
+
+        indicatorElem.className = topElemRect.top < -30 ? 'hide' : 'show';
+    });
+})();
+
+// cli
+(function() {
     const cursorElem = document.getElementById('cursor');
     const inputElem = document.getElementById('input');
 
