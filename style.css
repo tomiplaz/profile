@@ -11,6 +11,10 @@ body {
     margin: 0;
 }
 
+h2:not(.container--first__item--first__description__profession) {
+    text-decoration: underline;
+}
+
 .fa.fa-angle-right {
     font-weight: bold;
 }
@@ -99,8 +103,7 @@ a:hover {
     display: flex;
     flex-flow: column;
     justify-content: center;
-    align-items: center;
-    text-align: center;
+    align-items: flex-start;
 }
 
 .container--first__item--second h2 {
@@ -115,8 +118,7 @@ a:hover {
 }
 
 .container--second__item {
-    width: 100%;
-    text-align: center;
+    width: 95%;
 }
 
 .container--second__item--work-experience__item,
@@ -133,8 +135,19 @@ a:hover {
 
 .container--second__item--work-experience__item p,
 .container--second__item--pet-projects__item p {
-    width: 80%;
+    width: 95%;
     margin: 0 auto;
+}
+
+.container--second__item--cli {
+    margin: 5% auto;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: default;
+}
+
+.container--second__item--cli #cursor {
+    background-color: var(--green);
 }
 
 @media only screen and (orientation: landscape) {
