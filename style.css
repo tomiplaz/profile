@@ -1,6 +1,7 @@
 :root {
     --green: #82d433;
     --black: #232729;
+    --box-shadow-common: 0 0.1em 0 0 var(--green);
     font-size: calc(14px + (24 - 14) * ((100vw - 580px) / (1600 - 580)));
     color: var(--green);
     background-color: var(--black);
@@ -11,8 +12,9 @@ body {
     margin: 0;
 }
 
-h2:not(.container--first__item--first__description__profession) {
-    text-decoration: underline;
+h2:not(.container--first__item--basic__description__profession) {
+    display: table;
+    box-shadow: var(--box-shadow-common);
 }
 
 .fa.fa-angle-right {
@@ -33,43 +35,45 @@ a:hover {
     flex-direction: column;
     justify-content: start;
     align-items: center;
+    width: 100%;
 }
 
-.container--first {
-    width: 100%;
+.container--first__item,
+.container--second__item {
+    width: 95%;
 }
 
 .container--first__item {
-    width: 100%;
     height: 50vh;
+    margin: 0 1%;
 }
 
-.container--first__item--first {
+.container--first__item--basic {
     display: flex;
     flex-flow: column;
     justify-content: space-evenly;
     align-items: center;
 }
 
-.container--first__item--first img {
+.container--first__item--basic img {
     width: 45%;
     height: auto;
     border-radius: 50%;
 }
 
-.container--first__item--first__description {
+.container--first__item--basic__description {
     text-align: center;
 }
 
-.container--first__item--first__description__name {
+.container--first__item--basic__description__name {
     margin: 0;
 }
 
-.container--first__item--first__description__profession {
+.container--first__item--basic__description__profession {
     margin: 0;
 }
 
-.container--first__item--first__profiles {
+.container--first__item--basic__profiles {
     width: 100%;
     display: flex;
     flex-flow: row wrap;
@@ -77,7 +81,7 @@ a:hover {
     align-items: center;
 }
 
-.container--first__item--first__profiles a {
+.container--first__item--basic__profiles a {
     display: block;
     width: 2rem;
     height: 2rem;
@@ -87,38 +91,28 @@ a:hover {
     text-align: center;
 }
 
-.container--first__item--first__profiles a:hover {
-    box-shadow: 0 0.2em 0 0 var(--green);
+.container--first__item--basic__profiles a:hover {
+    box-shadow: var(--box-shadow-common);
 }
 
-.container--first__item--first__profiles a:hover,
-.container--first__item--first__profiles a:link,
-.container--first__item--first__profiles a:visited,
-.container--first__item--first__profiles a:active {
+.container--first__item--basic__profiles a:hover,
+.container--first__item--basic__profiles a:link,
+.container--first__item--basic__profiles a:visited,
+.container--first__item--basic__profiles a:active {
     color: var(--green);
     cursor: pointer;
 }
 
-.container--first__item--second {
+.container--first__item--summary {
     display: flex;
     flex-flow: column;
     justify-content: center;
     align-items: flex-start;
 }
 
-.container--first__item--second h2 {
-    text-align: center;
-    margin-top: initial;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.container--first__item--second p {
-    margin: 1% 5%;
-}
-
-.container--second__item {
-    width: 95%;
+.container--first__item p,
+.container--second__item p {
+    margin: 1% 2%;
 }
 
 .container--second__item--work-experience__item,
@@ -131,12 +125,6 @@ a:hover {
 .container--second__item--work-experience__item__duration,
 .container--second__item--pet-projects__item__name {
     margin: 0;
-}
-
-.container--second__item--work-experience__item p,
-.container--second__item--pet-projects__item p {
-    width: 95%;
-    margin: 0 auto;
 }
 
 .container--second__item--cli {
@@ -158,6 +146,12 @@ a:hover {
     .container--first__item {
         width: 50%;
         height: 100vh;
+    }
+
+    .container--first__item--summary h2 {
+        margin-top: 0;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .container--second {
