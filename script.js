@@ -1,4 +1,3 @@
-
 'use strict';
 
 // indicator
@@ -40,6 +39,7 @@
     const HELP = 'help';
     const CLEAR = 'clear';
     const EXIT = 'exit';
+    const TOP = 'top';
     const GITHUB = 'github';
     const TWITTER = 'twitter';
     const LINKEDIN = 'linkedin';
@@ -78,6 +78,7 @@
         `${HELP}: show this list of CLI commands`,
         `${CLEAR}: clear input (same as CTRL+C)`,
         `${EXIT}: exit profile`,
+        `${TOP}: go to top of the page`,
         `${GITHUB}: ${OPEN} GitHub ${PROFILE}`,
         `${TWITTER}: ${OPEN} Twitter ${PROFILE}`,
         `${LINKEDIN}: ${OPEN} LinkedIn ${PROFILE}`,
@@ -162,6 +163,10 @@
                     break;
                 case EXIT:
                     window.open('about:blank', '_self');
+                    break;
+                case TOP:
+                    window.scrollTo(0, 0);
+                    clearInput();
                     break;
                 case '':
                     break;
