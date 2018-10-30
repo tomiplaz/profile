@@ -63,7 +63,7 @@
         [TWITTER]: 'https://twitter.com/tomiplaz1',
         [LINKEDIN]: 'https://www.linkedin.com/in/tomislavplazonic',
         [STACKOVERFLOW]: 'https://stackoverflow.com/users/10478028/tomiplaz?tab=profile',
-        [CV]: 'https://tomiplaz.xyz/Tomislav_Plazonic_CV.pdf',
+        [CV]: 'https://tomiplaz.xyz/cv.pdf',
         [NGBLOG]: 'https://github.com/tomiplaz/ngblog',
         [BLOG_API]: 'https://github.com/tomiplaz/blog-api',
         [MY_COINS]: 'https://github.com/tomiplaz/my-coins',
