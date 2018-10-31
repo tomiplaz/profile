@@ -167,12 +167,6 @@ a:hover {
         height: calc(100 * var(--vh, 1vh));
     }
 
-    .container--first__item--summary h2 {
-        margin-top: 0;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
     .container--second {
         width: 75%;
         margin: 0 auto;
