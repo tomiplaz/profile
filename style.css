@@ -164,7 +164,7 @@ a:hover {
 
     .container--first__item {
         width: 50%;
-        height: 100vh;
+        height: calc(100 * var(--vh, 1vh));
     }
 
     .container--first__item--summary h2 {

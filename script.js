@@ -19,7 +19,7 @@ const containerFirstElem = document.getElementsByClassName('container--first').i
 
     window.addEventListener('scroll', () => {
         const containerFirstElemRect = containerFirstElem.getBoundingClientRect();
-        indicatorElem.className = containerFirstElemRect.top < -30 ? 'hide' : 'show';
+        indicatorElem.className = containerFirstElemRect.top < -20 ? 'hide' : 'show';
     });
 })();
 
