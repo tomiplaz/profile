@@ -10,8 +10,10 @@ const containerFirstElem = document.getElementsByClassName('container--first').i
     if (isMobile) {
         vhRedefine();
 
+        let timeout;
         window.addEventListener('resize', () => {
-            vhRedefine();
+            clearTimeout(timeout);
+            timeout = setTimeout(() => vhRedefine(), 200);
         });
     }
 

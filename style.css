@@ -2,6 +2,7 @@
     --green: #82d433;
     --black: #232729;
     --box-shadow-common: 0 0.1em 0 0 var(--green);
+    --transition-duration: 0.2s;
     font-size: calc(14px + (24 - 14) * ((100vw - 580px) / (1600 - 580)));
     color: var(--green);
     background-color: var(--black);
@@ -20,7 +21,7 @@ body {
     width: 10%;
     margin-left: -5%;
     transition-property: bottom;
-    transition-duration: 0.3s;
+    transition-duration: var(--transition-duration);
 }
 
 #indicator.show {
@@ -65,6 +66,8 @@ a:hover {
 .container--first__item {
     height: calc(50 * var(--vh, 1vh));
     margin: 0 1%;
+    transition-property: 'height';
+    transition-duration: var(--transition-duration);
 }
 
 .container--first__item--basic {
