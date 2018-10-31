@@ -63,7 +63,7 @@ a:hover {
 }
 
 .container--first__item {
-    height: 50vh;
+    height: calc(50 * var(--vh, 1vh));
     margin: 0 1%;
 }
 
