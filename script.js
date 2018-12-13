@@ -69,7 +69,7 @@ const containerFirstElem = document.getElementsByClassName('container--first').i
     const NGBLOG = 'ngblog';
     const BLOG_API = 'blog-api';
     const MY_COINS = 'my-coins';
-    const YABLA = 'yabla';
+    const BLOGS = 'blogs';
     const YAMB = 'yamb';
     const YAMB_V2 = 'yamb-v2';
     const YAMB_V1 = 'yamb-v1';
@@ -89,7 +89,7 @@ const containerFirstElem = document.getElementsByClassName('container--first').i
         [NGBLOG]: 'https://github.com/tomiplaz/ngblog',
         [BLOG_API]: 'https://github.com/tomiplaz/blog-api',
         [MY_COINS]: 'https://github.com/tomiplaz/my-coins',
-        [YABLA]: 'https://yabla.tomiplaz.xyz',
+        [BLOGS]: 'https://blogs.tomiplaz.xyz',
         [YAMB]: 'https://yamb.tomiplaz.xyz',
         [YAMB_V2]: 'https://yamb.tomiplaz.xyz',
         [YAMB_V1]: 'https://ugodnomjesto.000webhostapp.com/yamb/',
@@ -110,7 +110,7 @@ const containerFirstElem = document.getElementsByClassName('container--first').i
         `${NGBLOG}: ${OPEN} ngblog ${REPOSITORY}`,
         `${BLOG_API}: ${OPEN} blog-api ${REPOSITORY}`,
         `${MY_COINS}: ${OPEN} my-coins ${REPOSITORY}`,
-        `${YABLA}: ${OPEN} yabla ${APPLICATION}`,
+        `${BLOGS}: ${OPEN} blogs ${APPLICATION}`,
         `${YAMB}: alias for ${YAMB_V2}`,
         `${YAMB_V2}: ${OPEN} Yamb (v2) ${APPLICATION}`,
         `${YAMB_V1}: ${OPEN} Yamb (v1) ${APPLICATION}`,
