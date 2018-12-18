@@ -32,7 +32,7 @@ body {
     bottom: -10vh;
 }
 
-h2:not(.container--first__item--basic__description__profession) {
+h2:not(.container--first__item--basic__info__description__profession) {
     display: table;
     box-shadow: var(--box-shadow-common);
 }
@@ -77,29 +77,48 @@ a:hover {
     align-items: center;
 }
 
-.container--first__item--basic img {
-    width: 45%;
-    height: auto;
-    border-radius: 50%;
+.container--first__item--basic__image {
+    height: 50%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.container--first__item--basic__description {
+.container--first__item--basic__image img {
+    border-radius: 50%;
+    box-shadow: 0 0.1em 0 0 var(--green);
+}
+
+.container--first__item--basic__info {
+    height: 50%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+}
+
+.container--first__item--basic__info__description {
     text-align: center;
 }
 
-.container--first__item--basic__description__name {
+.container--first__item--basic__info__description__name,
+.container--first__item--basic__info__description__profession {
     margin: 0;
 }
 
-.container--first__item--basic__description__profession {
-    margin: 0;
+.container--first__item--basic__info__description__name {
+    font-size: 2.3rem;
+}
+
+.container--first__item--basic__info__description__profession {
+    font-size: 1.6rem;
 }
 
 .container--first__item--basic__profiles {
     width: 100%;
     display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
+    flex-flow: row;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -107,7 +126,7 @@ a:hover {
     display: block;
     width: 2rem;
     height: 2rem;
-    margin: 0 5%;
+    margin: 0;
     font-size: 1.8rem;
     padding: 5px;
     text-align: center;
@@ -126,10 +145,11 @@ a:hover {
 }
 
 .container--first__item--summary {
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: flex-start;
+    text-align: center;
+}
+
+.container--first__item--summary p {
+    line-height: 1.5rem;
 }
 
 .container--first__item p,
@@ -161,18 +181,27 @@ a:hover {
 }
 
 @media only screen and (orientation: landscape) {
-    .container--first {
-        flex-direction: row;
-    }
-
-    .container--first__item {
-        width: 50%;
-        height: calc(100 * var(--vh, 1vh));
+    .container--first__item--basic__image img {
+        height: 80%;
+        width: auto;
     }
 
     .container--second {
         width: 75%;
         margin: 0 auto;
+    }
+}
+
+@media only screen and (orientation: landscape) and (min-width: 900px) {
+    .container--first__item {
+        width: 60%;
+    }
+}
+
+@media only screen and (orientation: portrait) {
+    .container--first__item--basic__image img {
+        width: 40%;
+        height: auto;
     }
 }
 
