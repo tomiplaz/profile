@@ -62,7 +62,6 @@ const containerFirstElem = document.getElementsByClassName('container--first').i
     const EXIT = 'exit';
     const TOP = 'top';
     const GITHUB = 'github';
-    const TWITTER = 'twitter';
     const LINKEDIN = 'linkedin';
     const STACKOVERFLOW = 'stackoverflow';
     const CV = 'cv';
@@ -82,7 +81,6 @@ const containerFirstElem = document.getElementsByClassName('container--first').i
     
     const COMMAND_URLS = {
         [GITHUB]: 'https://github.com/tomiplaz',
-        [TWITTER]: 'https://twitter.com/tomiplaz1',
         [LINKEDIN]: 'https://www.linkedin.com/in/tomislavplazonic',
         [STACKOVERFLOW]: 'https://stackoverflow.com/users/10478028/tomiplaz?tab=profile',
         [CV]: 'https://tomiplaz.xyz/cv.pdf',
@@ -103,7 +101,6 @@ const containerFirstElem = document.getElementsByClassName('container--first').i
         `${EXIT}: exit profile`,
         `${TOP}: go to top of the page`,
         `${GITHUB}: ${OPEN} GitHub ${PROFILE}`,
-        `${TWITTER}: ${OPEN} Twitter ${PROFILE}`,
         `${LINKEDIN}: ${OPEN} LinkedIn ${PROFILE}`,
         `${STACKOVERFLOW}: ${OPEN} StackOverflow ${PROFILE}`,
         `${CV}: ${OPEN} curriculum vitae`,

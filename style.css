@@ -118,7 +118,7 @@ a:hover {
     width: 100%;
     display: flex;
     flex-flow: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
