@@ -65,6 +65,7 @@ const containerFirstElem = document.getElementsByClassName('container--first').i
     const LINKEDIN = 'linkedin';
     const STACKOVERFLOW = 'stackoverflow';
     const CV = 'cv';
+    const LCC = 'lcc';
     const NGBLOG = 'ngblog';
     const BLOG_API = 'blog-api';
     const MY_COINS = 'my-coins';
@@ -84,6 +85,7 @@ const containerFirstElem = document.getElementsByClassName('container--first').i
         [LINKEDIN]: 'https://www.linkedin.com/in/tomislavplazonic',
         [STACKOVERFLOW]: 'https://stackoverflow.com/users/10478028/tomiplaz?tab=profile',
         [CV]: 'https://tomiplaz.xyz/cv.pdf',
+        [LCC]: 'https://github.com/tomiplaz/lcc',
         [NGBLOG]: 'https://github.com/tomiplaz/ngblog',
         [BLOG_API]: 'https://github.com/tomiplaz/blog-api',
         [MY_COINS]: 'https://github.com/tomiplaz/my-coins',
@@ -104,6 +106,7 @@ const containerFirstElem = document.getElementsByClassName('container--first').i
         `${LINKEDIN}: ${OPEN} LinkedIn ${PROFILE}`,
         `${STACKOVERFLOW}: ${OPEN} StackOverflow ${PROFILE}`,
         `${CV}: ${OPEN} curriculum vitae`,
+        `${LCC}: ${OPEN} lcc ${REPOSITORY}`,
         `${NGBLOG}: ${OPEN} ngblog ${REPOSITORY}`,
         `${BLOG_API}: ${OPEN} blog-api ${REPOSITORY}`,
         `${MY_COINS}: ${OPEN} my-coins ${REPOSITORY}`,
