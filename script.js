@@ -94,7 +94,7 @@ const containerFirstElem = document
 
   const COMMAND_URLS = {
     [GITHUB]: "https://github.com/tomiplaz",
-    [LINKEDIN]: "https://www.linkedin.com/in/tomislavplazonic",
+    [LINKEDIN]: "https://www.linkedin.com/in/tomislav-plazonic-3b45261a3",
     [STACKOVERFLOW]:
       "https://stackoverflow.com/users/10478028/tomiplaz?tab=profile",
     [CV]: "https://tomiplaz.dev/cv.pdf",
