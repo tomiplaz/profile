@@ -4,4 +4,4 @@ My personal website where you can find some basic information about me, links to
 
 The website is located at https://tomiplaz.dev
 
-Tomislav Plazonic, 2022
+Tomislav Plazonic, 2018
